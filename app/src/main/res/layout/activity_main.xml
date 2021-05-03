@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#31396E"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+
+      android:layout_marginLeft="100sp"
+      android:layout_marginTop="20sp"
+      android:textColor="@color/white"
+      android:textSize="27sp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pick &amp; drop \n Service Provider "
+      android:gravity="center"
+      android:textStyle="italic|bold"
+      />
+
+  <ImageView
+      android:layout_width="180sp"
+      android:layout_height="180sp"
+      android:layout_marginLeft="106sp"
+      android:layout_marginTop="120sp"
+    android:src="@drawable/logocir"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50sp"
+      android:layout_marginTop="370sp"
+      android:text="Email"
+      android:textStyle="bold"
+      android:textSize="23sp"
+      android:textColor="@color/followingBg"/>
+
+  <EditText
+      android:id="@+id/Email"
+      android:layout_width="309dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50sp"
+      android:layout_marginTop="400sp"
+      android:ems="10"
+      android:inputType="textEmailAddress" />
+
+
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50sp"
+      android:layout_marginTop="470sp"
+      android:text="Password"
+      android:textStyle="bold"
+      android:textSize="23sp"
+      android:textColor="@color/followingBg"/>
+
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="309dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50sp"
+      android:layout_marginTop="500sp"
+      android:ems="10"
+      android:inputType="textPassword" />
+
+
+  <Button
+      android:id="@+id/Signin"
+      android:layout_width="150sp"
+      android:layout_height="50sp"
+      android:layout_marginTop="570sp"
+      android:layout_marginLeft="128sp"
+      android:text="Signin"
+      android:textStyle="bold|italic"
+      android:backgroundTint="#009688"
+
+      android:textColor="@color/teal_200">
+  </Button>
+
+
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="Sign Up Now"
+    android:textSize="20sp"
+    android:textColor="#8BE6E6E6"
+    android:onClick="tosignup"
+    android:textStyle="bold"
+    android:layout_marginTop="630sp"
+    android:layout_marginLeft="140sp"/>
+
+  <TextView
+      android:id="@+id/forgetpass"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Forget Password?"
+      android:textSize="20sp"
+      android:textColor="#C9E6E6E6"
+      android:textStyle="bold"
+      android:layout_marginTop="670sp"
+      android:layout_marginLeft="123sp"/>
+
+
+</RelativeLayout>

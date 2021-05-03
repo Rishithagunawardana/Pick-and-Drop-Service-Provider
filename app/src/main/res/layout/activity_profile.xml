@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07233C"
+    tools:context=".profile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="170sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"/>
+
+
+    <ImageView
+        android:layout_width="298dp"
+        android:layout_height="296dp"
+        android:layout_marginLeft="55sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/backprof" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="136dp"
+        android:layout_height="173dp"
+        android:layout_marginLeft="135sp"
+        android:layout_marginTop="112sp"
+        android:src="@drawable/man" />
+
+    <Button
+        android:id="@+id/uploadpic"
+        android:layout_width="150sp"
+        android:layout_height="47sp"
+        android:layout_marginTop="300sp"
+        android:layout_marginLeft="40sp"
+        android:text="Upload photo"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="||"
+        android:layout_marginTop="304sp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="200sp"/>
+
+    <Button
+        android:id="@+id/deletepic"
+        android:layout_width="150sp"
+        android:layout_height="47sp"
+        android:layout_marginTop="300sp"
+        android:layout_marginLeft="220sp"
+        android:text=" Delete Photo"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200">
+    </Button>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="380sp"
+        android:text="Name :- "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190sp"
+        android:layout_marginTop="380sp"
+        android:text="Username "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/gradStart"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="433sp"
+        android:text="Email :- "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <TextView
+        android:id="@+id/uemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190sp"
+        android:layout_marginTop="433sp"
+        android:text="User Email"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/gradStart"/>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="488sp"
+        android:text="NIC No "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+    <TextView
+        android:id="@+id/nic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185sp"
+        android:layout_marginTop="488sp"
+        android:text=" User NIC No "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/gradStart"/>
+
+    <Button
+        android:id="@+id/reqpasschange"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="550sp"
+        android:layout_marginLeft="60sp"
+        android:text="Request for password Change"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200">
+    </Button>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="300sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="610sp"
+        android:layout_marginLeft="60sp"
+        android:text="back "
+        android:textStyle="bold|italic"
+        android:onClick="todash"
+        android:textColor="@color/teal_200">
+    </Button>
+
+
+</RelativeLayout>

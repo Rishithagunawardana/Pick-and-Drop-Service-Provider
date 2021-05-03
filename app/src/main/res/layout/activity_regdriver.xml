@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#172057"
+    android:layout_height="match_parent"
+    tools:context=".regdriver">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Register Driver "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="115sp"
+        android:layout_marginTop="30sp">
+    </TextView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="136dp"
+        android:layout_height="173dp"
+        android:layout_marginLeft="135sp"
+        android:layout_marginTop="82sp"
+        android:src="@drawable/driver" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="290sp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/driname"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="330sp"
+        android:background="@drawable/edittext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="390sp"
+        android:text="Address"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="430sp"
+        android:background="@drawable/edittext"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="490sp"
+        android:text="Phone No"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="530sp"
+        android:background="@drawable/edittext"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="590sp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="630sp"
+        android:background="@drawable/edittext"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="690sp"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="730sp"
+        android:background="@drawable/edittext"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="790sp"
+        android:text="NIC No "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="830sp"
+        android:background="@drawable/edittext"
+        android:inputType="textPassword"/>
+
+    <Button
+
+        android:id="@+id/reg"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="890sp"
+        android:layout_marginLeft="230sp"
+        android:text="Register"
+
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"/>
+    <Button
+
+
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="890sp"
+        android:layout_marginLeft="40sp"
+        android:text="Back"
+        android:onClick="todash"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"/>
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

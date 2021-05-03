@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#172057"
+    tools:context=".Drivers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330sp"
+        android:onClick="registerdriver"
+        android:orientation="vertical"
+        android:background="@drawable/btn_bg">
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="105sp"
+            android:src="@drawable/man"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95sp"
+            android:layout_marginTop="40sp"
+            android:textSize="30sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:text="Register Drivers"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="20sp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360sp"
+        android:onClick="showdrivers"
+        android:layout_marginTop="350sp"
+        android:layout_marginBottom="60sp"
+        android:orientation="vertical"
+        android:background="@drawable/btn_bg">
+
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="105sp"
+            android:src="@drawable/alld"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95sp"
+            android:layout_marginTop="30sp"
+            android:textSize="30sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:text="See All  Drivers"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_height="90sp"
+        android:layout_width="170sp"
+        android:layout_marginTop="675sp"
+        android:layout_marginLeft="230sp"
+        android:text="Back"
+        android:onClick="dash"/>
+
+</RelativeLayout>

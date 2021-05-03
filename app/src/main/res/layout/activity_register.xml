@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31396E"
+    tools:context=".Register">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup Here"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:layout_marginLeft="120sp"
+        android:layout_marginTop="30sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="149dp"
+        android:layout_height="155dp"
+        android:src="@drawable/regavatar"
+        android:layout_marginLeft="120sp"
+        android:layout_marginTop="100sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="285sp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="320sp"
+        android:ems="10"
+        android:inputType="text" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="373sp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="410sp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="470sp"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="500sp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="559sp"
+        android:text="NIC No "
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/followingBg"/>
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="590sp"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="640sp"
+        android:layout_marginLeft="128sp"
+        android:text="Signup"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#009688"
+        android:textColor="@color/teal_200">
+    </Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In Now"
+        android:textSize="20sp"
+        android:textColor="#8BE6E6E6"
+        android:onClick="tosignin"
+        android:textStyle="bold"
+        android:layout_marginTop="690sp"
+        android:layout_marginLeft="150sp"/>
+
+</RelativeLayout>

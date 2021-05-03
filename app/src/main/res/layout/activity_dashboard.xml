@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#172057"
+    android:textAlignment="gravity"
+    tools:context=".Dashboard">
+    
+    
+    <LinearLayout
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="320sp"
+        android:layout_marginTop="20sp"
+   >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logonew"
+/>
+
+
+    </LinearLayout>
+ 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20sp"
+        android:text="Greetings,"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/circleBorder"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="57sp"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F9FBFD"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_marginTop="105sp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/vehiclreqs"
+            android:layout_width="360sp"
+            android:layout_height="95sp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="12sp"
+            android:onClick="tovehiclereq"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/req"
+            android:text=" Vehicle  Requests"
+            android:textSize="17sp"
+            android:layout_marginTop="20sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/drivers"
+            android:layout_width="360sp"
+            android:layout_height="95sp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="12sp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="20sp"
+            android:text="Drivers"
+            android:onClick="drivers"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/drivers"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:layout_marginTop="405sp"
+        android:orientation="vertical">
+
+
+
+   <LinearLayout
+       android:id="@+id/profile"
+       android:layout_width="match_parent"
+       android:layout_height="80sp"
+       android:layout_marginLeft="20sp"
+       android:layout_marginRight="20sp"
+       android:onClick="profile"
+ android:backgroundTint="@color/common_google_signin_btn_text_light_focused"
+       android:background="@drawable/btn_bg">
+       <ImageView
+           android:layout_width="30sp"
+           android:layout_height="50sp"
+           android:layout_marginTop="14sp"
+           android:layout_marginLeft="15sp"
+           android:src="@drawable/arrow_white"/>
+       <TextView
+           android:layout_width="200sp"
+           android:layout_height="match_parent"
+           android:text="Profile"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           android:textColor="#408FDD"
+           android:textSize="23sp"
+           android:layout_marginTop="26sp"
+           android:layout_marginLeft="120sp"
+           android:textStyle="bold">
+
+       </TextView>
+
+
+
+
+   </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allreq"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
+            android:onClick="allreq"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_focused"
+            android:background="@drawable/btn_bg">
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="14sp"
+                android:layout_marginLeft="15sp"
+                android:src="@drawable/archive"/>
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:text="All Requests "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#408FDD"
+                android:textSize="23sp"
+                android:layout_marginTop="23sp"
+                android:layout_marginLeft="90sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="250sp"
+            android:text="Logout"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_200">
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
