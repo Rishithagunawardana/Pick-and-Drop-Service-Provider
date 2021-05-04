@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -50,25 +51,7 @@ public class approved extends AppCompatActivity {
          @Override
          public void onClick(View v) {
 
-
-             String nme = name.getText().toString();
-             String STATUS = status.getText().toString();
-             String TYPE = type.getText().toString();
-             String FEE = fee.getText().toString();
-             String DRNAME = drname.getText().toString();
-             String DRMOBILE = drmobile.getText().toString();
-
-
-
-             Map newPost = new HashMap();
-             newPost.put("Passenger_name", nme);
-             newPost.put("Trip_Status", STATUS);
-             newPost.put("Vehicle_Type", TYPE);
-             newPost.put("Fee", FEE);
-             newPost.put("Driver_Name", DRNAME);
-             newPost.put("Driver_Mobile_No", DRMOBILE);
-
-             current_user_db.setValue(newPost);
+             InsertReqdata();
              current_user_db.addValueEventListener(new ValueEventListener() {
                  @Override
                  public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -94,6 +77,22 @@ public class approved extends AppCompatActivity {
 
 
     }
+
+    private void InsertReqdata() {
+        String nme = name.getText().toString();
+        String STATUS = status.getText().toString();
+        String TYPE = type.getText().toString();
+        String FEE = fee.getText().toString();
+        String DRNAME = drname.getText().toString();
+        String DRMOBILE = drmobile.getText().toString();
+        set set = new set(nme,STATUS,TYPE ,FEE ,DRNAME ,DRMOBILE);
+        current_user_db.push().setValue(set);
+
+
+
+    }
+
+
     // notification part
     // add this part to initialize  -    notification();
 
